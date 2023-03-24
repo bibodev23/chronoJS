@@ -3,6 +3,7 @@ let resetBtn = document.getElementById("reset")
 let stopBtn = document.getElementById("stop")
 let startBtn = document.getElementById("start")
 
+
 let heures = 0;
 let minutes = 0;
 let secondes = 0;
@@ -77,3 +78,24 @@ const reset = () => {
 startBtn.addEventListener("click", demarrer); // dès qu'il y à un click on déclenche la fonction
 stopBtn.addEventListener("click", arreter);
 resetBtn.addEventListener("click", reset);
+
+
+
+
+horloge = document.getElementById("horloge")
+
+let heure = () => {
+    let d = new Date();    
+    horloge.textContent = d.toLocaleTimeString("fr");
+    setTimeout(heure, 1000)
+}
+heure()
+
+date = document.getElementById("date")
+
+let dates = () => {
+    let d = new Date();    
+    date.textContent = d.toLocaleDateString("fr");
+    setTimeout(heure, 1000)
+}
+dates()
