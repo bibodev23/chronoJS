@@ -1,0 +1,40 @@
+.wrapper
+{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 40%;
+    height: 80vh;
+    margin: 50px auto;
+    text-align: center;
+    background: url(/media/astro.jpg) center/cover;
+}
+#chrono, .buttons
+{
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#chrono
+{
+    color: aliceblue;
+    font-size: 3em;
+}
+button
+{
+    background: transparent;
+    border: 2px solid orangered;
+    border-radius: 8px;
+    color: aliceblue;
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover
+{
+    background: orangered;
+}
