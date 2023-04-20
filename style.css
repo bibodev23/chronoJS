@@ -1,13 +1,15 @@
-.wrapper
+.container
 {
+    display: grid;
     border: 1px solid black;
     border-radius: 8px;
     width: 40%;
-    height: 60vh;
+    min-height: 50vh;
     margin: 50px auto;
     text-align: center;
     background: url(/media/astro.jpg) center/cover;
     color: aliceblue;
+    box-shadow: 1px -6px 20px black;
 }
 
 header
@@ -15,6 +17,8 @@ header
     display: flex;
     justify-content: space-between;
     margin: 10px 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 #chrono, .buttons
 {
@@ -53,5 +57,11 @@ button
 button:hover
 {
     background: orangered;
+}
+
+.buttons
+{
+    flex-wrap: wrap;
+    margin: 10px;
 }
 

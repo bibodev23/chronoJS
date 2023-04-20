@@ -1,3 +1,5 @@
+
+
 let chrono = document.getElementById("chrono")
 let resetBtn = document.getElementById("reset")
 let stopBtn = document.getElementById("stop")
@@ -98,4 +100,4 @@ let dates = () => {
     date.textContent = d.toLocaleDateString("fr");
     setTimeout(heure, 1000)
 }
-dates()
+dates();
